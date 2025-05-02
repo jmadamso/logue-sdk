@@ -165,6 +165,7 @@ struct Waves {
       }
       state.wave0 = table[idx];
     }
+
     if (flags & k_flag_wave1) {
       static const uint8_t k_d_thr = k_waves_d_cnt;
       static const uint8_t k_e_thr = k_d_thr + k_waves_e_cnt;

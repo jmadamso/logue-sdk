@@ -2,11 +2,11 @@
 # Project Customization
 # #############################################################################
 
-PROJECT = josc
+PROJECT = wavecat
 
 UCSRC = 
 
-UCXXSRC = josc.cpp
+UCXXSRC = wavecat.cpp
 
 UINCDIR =
 

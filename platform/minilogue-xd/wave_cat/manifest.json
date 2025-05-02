@@ -7,7 +7,7 @@
         "dev_id" : 0,
         "prg_id" : 0,
         "version" : "1.0-1",
-        "name" : "josc",
+        "name" : "cat",
         "num_param" : 6,
         "params" : [
             ["Wave A",      0,  45,  ""],

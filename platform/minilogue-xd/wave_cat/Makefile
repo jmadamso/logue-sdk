@@ -33,8 +33,11 @@ MCU := cortex-m4
 
 MCU_MODEL := STM32F401xC
 
+SHELL = /usr/bin/bash
+
 GCC_TARGET := arm-none-eabi-
 #GCC_BIN_PATH ?= $(TOOLSDIR)/gcc/gcc-arm-none-eabi-5_4-2016q3/bin
+#GCC_BIN_PATH ?= ~/git_repos/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin
 GCC_BIN_PATH ?= /usr/bin
 
 CC   := $(GCC_BIN_PATH)/$(GCC_TARGET)gcc
@@ -63,6 +66,7 @@ CXXOPT := -std=c++11 -fno-rtti -fno-exceptions -fno-non-call-exceptions
 LDOPT := -Xlinker --just-symbols=$(LDDIR)/osc_api.syms
 
 CWARN := -W -Wall -Wextra
+#CXXWARN := -W -Wall -Wextra -Wdouble-promotion -Wfloat-conversion 
 CXXWARN :=
 
 FPU_OPTS := -mfloat-abi=hard -mfpu=fpv4-sp-d16 -fsingle-precision-constant -fcheck-new
