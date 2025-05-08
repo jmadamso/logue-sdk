@@ -81,7 +81,7 @@ void OSC_CYCLE(const user_osc_param_t *const params,
     else
     {
       //sig = 0; // osc_wave_scanf(s.wave1, phi1);
-      sig = osc.triangle_bi();
+      sig = osc.square_bi();// triangle_bi();
     }
 
     sig = clip1m1f(sig);
